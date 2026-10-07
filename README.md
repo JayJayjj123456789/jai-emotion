@@ -16,9 +16,9 @@ tags:
 metrics:
 - accuracy
 widget:
-- text: "โอโห้ ช่องนี้เปิดโลกเรามากเลยค่ะ ดูจีเนียสมากๆๆ"
+- text: "ขอบคุณมากนะคะ ชอบมากเลย"
   example_title: "Positive"
-- text: "เริ่มจากชายเน็ตคนหนึ่งเปิดประเด็นว่าไปพบเจ้าจุดดำลึกลับนี้กลางมหาสมุทรใน Google Maps"
+- text: "พรุ่งนี้สอบกี่โมงนะ"
   example_title: "Neutral"
 - text: "ผมเป็นคนที่ไม่มีความสุขเลยจริงๆ"
   example_title: "Negative"
