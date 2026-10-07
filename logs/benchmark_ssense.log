@@ -1,0 +1,26 @@
+=== thai_emotion: 100 rows ===
+  50/100 running acc: 82.0%
+  100/100 running acc: 82.0%
+
+==== thai_emotion: 82/100 = 82.0% ====
+  pos        neu        neg        
+  positive    18         1          1          
+  neutral     6          13         1          
+  negative    2          7          51         
+
+=== wisesight: 150 rows ===
+  [32] JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  50/150 running acc: 34.0%
+  100/150 running acc: 46.0%
+  [117] JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  [145] JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  150/150 running acc: 50.0%
+
+==== wisesight: 75/150 = 50.0% ====
+  pos        neu        neg        
+  positive    17         30         2          
+  neutral     12         29         9          
+  negative    5          14         29         
+
+==== SSENSE OVERALL: 157/250 = 62.8% ====
+=== reference: regex 98%/56% · our model v2 74%/62.7% ===

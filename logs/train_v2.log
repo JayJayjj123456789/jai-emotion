@@ -1,0 +1,44 @@
+device: mps
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 21574.96it/s]
+[transformers] [1mCamembertForSequenceClassification LOAD REPORT[0m from: airesearch/wangchanberta-base-att-spm-uncased
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.bias                | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.dense.bias       | MISSING    | 
+classifier.out_proj.bias    | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+trainable: 28.9M / 105.2M (27.5%)
+train 23191, val 2454
+class weights (pos/neu/neg): [1.81, 0.63, 1.15]
+steps total (verified): 725 x 2 = 1450
+ep1 step 100/1450 loss 1.0055 elapsed 0.8m eta 11.0m
+ep1 step 200/1450 loss 0.8456 elapsed 1.6m eta 10.1m
+ep1 step 300/1450 loss 0.9550 elapsed 2.4m eta 9.3m
+ep1 step 400/1450 loss 0.7183 elapsed 3.2m eta 8.5m
+ep1 step 500/1450 loss 0.8876 elapsed 4.1m eta 7.7m
+ep1 step 600/1450 loss 0.8775 elapsed 4.9m eta 6.9m
+ep1 step 700/1450 loss 0.7008 elapsed 5.7m eta 6.1m
+=== epoch 1 done: val accuracy 57.91% (6.2m) ===
+ep2 step 800/1450 loss 0.6261 elapsed 6.8m eta 5.5m
+ep2 step 900/1450 loss 0.8604 elapsed 7.6m eta 4.6m
+ep2 step 1000/1450 loss 0.9197 elapsed 8.4m eta 3.8m
+ep2 step 1100/1450 loss 0.6617 elapsed 9.2m eta 2.9m
+ep2 step 1200/1450 loss 0.7384 elapsed 10.0m eta 2.1m
+ep2 step 1300/1450 loss 0.7426 elapsed 10.8m eta 1.2m
+ep2 step 1400/1450 loss 0.5466 elapsed 11.6m eta 0.4m
+=== epoch 2 done: val accuracy 63.24% (12.4m) ===
+restored best epoch (val acc 63.24%)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.49it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.49it/s]
+saved: /Users/thxdadloveyoumost/jaikrajok]/ml/model_v2
+total time: 12.4 min

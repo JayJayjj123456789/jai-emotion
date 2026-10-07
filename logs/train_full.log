@@ -1,0 +1,76 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected /Users/thxdadloveyoumost/jjfolder/jaikrajok]/ml/venv, got /Users/thxdadloveyoumost/jjfolder/mymodel/../jaikrajok]/ml/venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /Users/thxdadloveyoumost/jjfolder/jaikrajok]/ml/venv, got /Users/thxdadloveyoumost/jjfolder/mymodel/../jaikrajok]/ml/venv
+device: mps
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 12935.05it/s]
+[transformers] [1mCamembertForSequenceClassification LOAD REPORT[0m from: airesearch/wangchanberta-base-att-spm-uncased
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+classifier.dense.weight     | MISSING    | 
+classifier.out_proj.bias    | MISSING    | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.dense.bias       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+trainable: 105.2M / 105.2M (100.0%) — FULL
+train 23191, val 2454
+class weights: [1.81, 0.63, 1.15]
+steps: 1450 x 3 = 4350
+ep1 step 100/4350 loss 1.0939 elapsed 0.9m eta 40.1m
+ep1 step 200/4350 loss 0.8356 elapsed 1.9m eta 39.1m
+ep1 step 300/4350 loss 0.8389 elapsed 2.8m eta 38.2m
+ep1 step 400/4350 loss 0.9878 elapsed 3.7m eta 37.0m
+ep1 step 500/4350 loss 0.9336 elapsed 4.7m eta 36.0m
+ep1 step 600/4350 loss 0.9589 elapsed 5.6m eta 35.1m
+ep1 step 700/4350 loss 0.7320 elapsed 6.5m eta 34.1m
+ep1 step 800/4350 loss 0.9772 elapsed 7.5m eta 33.1m
+ep1 step 900/4350 loss 0.6029 elapsed 8.4m eta 32.1m
+ep1 step 1000/4350 loss 1.0920 elapsed 9.3m eta 31.2m
+ep1 step 1100/4350 loss 0.5852 elapsed 10.2m eta 30.2m
+ep1 step 1200/4350 loss 0.7733 elapsed 11.1m eta 29.3m
+ep1 step 1300/4350 loss 0.5977 elapsed 12.1m eta 28.3m
+ep1 step 1400/4350 loss 0.5198 elapsed 13.0m eta 27.4m
+=== epoch 1 done: val accuracy 70.99% (13.8m) ===
+ep2 step 1500/4350 loss 0.4103 elapsed 14.2m eta 27.1m
+ep2 step 1600/4350 loss 0.4916 elapsed 15.2m eta 26.0m
+ep2 step 1700/4350 loss 0.9032 elapsed 16.1m eta 25.0m
+ep2 step 1800/4350 loss 0.4830 elapsed 17.0m eta 24.1m
+ep2 step 1900/4350 loss 0.9888 elapsed 17.9m eta 23.1m
+ep2 step 2000/4350 loss 0.6649 elapsed 18.8m eta 22.1m
+ep2 step 2100/4350 loss 0.2573 elapsed 19.7m eta 21.1m
+ep2 step 2200/4350 loss 0.7838 elapsed 20.7m eta 20.2m
+ep2 step 2300/4350 loss 0.7004 elapsed 21.6m eta 19.2m
+ep2 step 2400/4350 loss 0.3099 elapsed 22.5m eta 18.3m
+ep2 step 2500/4350 loss 0.3699 elapsed 23.4m eta 17.3m
+ep2 step 2600/4350 loss 0.8349 elapsed 24.3m eta 16.4m
+ep2 step 2700/4350 loss 0.6442 elapsed 25.2m eta 15.4m
+ep2 step 2800/4350 loss 0.4594 elapsed 26.1m eta 14.5m
+ep2 step 2900/4350 loss 0.4217 elapsed 27.1m eta 13.5m
+=== epoch 2 done: val accuracy 70.66% (27.4m) ===
+ep3 step 3000/4350 loss 0.4969 elapsed 28.3m eta 12.7m
+ep3 step 3100/4350 loss 0.3882 elapsed 29.2m eta 11.8m
+ep3 step 3200/4350 loss 0.6560 elapsed 30.1m eta 10.8m
+ep3 step 3300/4350 loss 0.4275 elapsed 31.0m eta 9.9m
+ep3 step 3400/4350 loss 0.9224 elapsed 32.0m eta 8.9m
+ep3 step 3500/4350 loss 0.2637 elapsed 32.9m eta 8.0m
+ep3 step 3600/4350 loss 0.3447 elapsed 33.8m eta 7.0m
+ep3 step 3700/4350 loss 0.1650 elapsed 34.7m eta 6.1m
+ep3 step 3800/4350 loss 0.6579 elapsed 35.6m eta 5.2m
+ep3 step 3900/4350 loss 0.5227 elapsed 36.6m eta 4.2m
+ep3 step 4000/4350 loss 0.1948 elapsed 37.5m eta 3.3m
+ep3 step 4100/4350 loss 0.3000 elapsed 38.5m eta 2.3m
+ep3 step 4200/4350 loss 0.2236 elapsed 39.4m eta 1.4m
+ep3 step 4300/4350 loss 0.5168 elapsed 40.3m eta 0.5m
+=== epoch 3 done: val accuracy 71.80% (41.1m) ===
+restored best epoch (val acc 71.80%)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  6.65it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  6.65it/s]
+saved: /Users/thxdadloveyoumost/jjfolder/mymodel/models/full1
+total time: 41.1 min

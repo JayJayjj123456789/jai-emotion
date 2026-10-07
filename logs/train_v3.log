@@ -1,0 +1,61 @@
+device: mps
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 10775.10it/s]
+[transformers] [1mCamembertForSequenceClassification LOAD REPORT[0m from: airesearch/wangchanberta-base-att-spm-uncased
+Key                         | Status     | 
+----------------------------+------------+-
+roberta.pooler.dense.weight | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+classifier.out_proj.bias    | MISSING    | 
+classifier.dense.bias       | MISSING    | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+trainable: 28.9M / 105.2M (27.5%)
+train 23191, val 2454
+class weights (pos/neu/neg): [1.81, 0.63, 1.15]
+steps total (verified): 725 x 4 = 2900
+ep1 step 100/2900 loss 1.0237 elapsed 0.8m eta 22.4m
+ep1 step 200/2900 loss 0.9130 elapsed 1.6m eta 21.7m
+ep1 step 300/2900 loss 0.7119 elapsed 2.4m eta 20.9m
+ep1 step 400/2900 loss 0.8530 elapsed 3.2m eta 20.1m
+ep1 step 500/2900 loss 0.9240 elapsed 4.0m eta 19.3m
+ep1 step 600/2900 loss 0.8268 elapsed 4.8m eta 18.5m
+ep1 step 700/2900 loss 0.8555 elapsed 5.6m eta 17.7m
+=== epoch 1 done: val accuracy 55.13% (6.2m) ===
+ep2 step 800/2900 loss 0.8237 elapsed 6.8m eta 17.8m
+ep2 step 900/2900 loss 0.5291 elapsed 7.6m eta 16.8m
+ep2 step 1000/2900 loss 0.6759 elapsed 8.4m eta 15.9m
+ep2 step 1100/2900 loss 0.8835 elapsed 9.2m eta 15.0m
+ep2 step 1200/2900 loss 0.7250 elapsed 10.0m eta 14.2m
+ep2 step 1300/2900 loss 0.8056 elapsed 10.8m eta 13.3m
+ep2 step 1400/2900 loss 0.8800 elapsed 11.6m eta 12.4m
+=== epoch 2 done: val accuracy 59.37% (12.3m) ===
+ep3 step 1500/2900 loss 0.9448 elapsed 12.7m eta 11.9m
+ep3 step 1600/2900 loss 0.6715 elapsed 13.5m eta 11.0m
+ep3 step 1700/2900 loss 0.8923 elapsed 14.3m eta 10.1m
+ep3 step 1800/2900 loss 0.7227 elapsed 15.1m eta 9.2m
+ep3 step 1900/2900 loss 0.8672 elapsed 15.9m eta 8.4m
+ep3 step 2000/2900 loss 0.6861 elapsed 16.7m eta 7.5m
+ep3 step 2100/2900 loss 0.8388 elapsed 17.5m eta 6.7m
+=== epoch 3 done: val accuracy 61.61% (18.4m) ===
+ep4 step 2200/2900 loss 0.7177 elapsed 18.6m eta 5.9m
+ep4 step 2300/2900 loss 0.8233 elapsed 19.4m eta 5.1m
+ep4 step 2400/2900 loss 0.8705 elapsed 20.2m eta 4.2m
+ep4 step 2500/2900 loss 0.7722 elapsed 21.1m eta 3.4m
+ep4 step 2600/2900 loss 0.8963 elapsed 21.9m eta 2.5m
+ep4 step 2700/2900 loss 0.6591 elapsed 22.7m eta 1.7m
+ep4 step 2800/2900 loss 0.6117 elapsed 23.5m eta 0.8m
+ep4 step 2900/2900 loss 0.6478 elapsed 24.3m eta 0.0m
+=== epoch 4 done: val accuracy 59.58% (24.6m) ===
+restored best epoch (val acc 61.61%)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.97it/s]
+saved: /Users/thxdadloveyoumost/jaikrajok]/ml/model_v3
+total time: 24.6 min

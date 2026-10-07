@@ -1,0 +1,128 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected /Users/thxdadloveyoumost/jjfolder/jaikrajok]/ml/venv, got /Users/thxdadloveyoumost/jjfolder/mymodel/../jaikrajok]/ml/venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /Users/thxdadloveyoumost/jjfolder/jaikrajok]/ml/venv, got /Users/thxdadloveyoumost/jjfolder/mymodel/../jaikrajok]/ml/venv
+device: mps
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 11116.79it/s]
+[transformers] [1mCamembertForSequenceClassification LOAD REPORT[0m from: airesearch/wangchanberta-base-att-spm-uncased
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+classifier.dense.bias       | MISSING    | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+classifier.out_proj.bias    | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+trainable: 105.2M / 105.2M (100.0%)
+train 57216, val 6234
+focal alpha: [1.588, 0.563, 0.849]
+steps: 3576 x 5 = 17880
+ep1 step 200/17880 loss 0.3441 elapsed 2.3m eta 199.5m
+ep1 step 400/17880 loss 0.5058 elapsed 4.5m eta 195.8m
+ep1 step 600/17880 loss 0.3308 elapsed 6.7m eta 193.3m
+ep1 step 800/17880 loss 0.4305 elapsed 9.0m eta 191.4m
+ep1 step 1000/17880 loss 0.5929 elapsed 11.2m eta 189.0m
+ep1 step 1200/17880 loss 0.2824 elapsed 13.4m eta 186.1m
+ep1 step 1400/17880 loss 0.3944 elapsed 15.6m eta 183.3m
+ep1 step 1600/17880 loss 0.2967 elapsed 17.8m eta 180.7m
+ep1 step 1800/17880 loss 0.4185 elapsed 19.9m eta 178.2m
+ep1 step 2000/17880 loss 0.3516 elapsed 22.2m eta 175.9m
+ep1 step 2200/17880 loss 0.3001 elapsed 24.4m eta 173.7m
+ep1 step 2400/17880 loss 0.2095 elapsed 26.6m eta 171.4m
+ep1 step 2600/17880 loss 0.1026 elapsed 28.8m eta 169.2m
+ep1 step 2800/17880 loss 0.2633 elapsed 31.1m eta 167.4m
+ep1 step 3000/17880 loss 0.3403 elapsed 33.3m eta 165.1m
+ep1 step 3200/17880 loss 0.1942 elapsed 35.5m eta 162.7m
+ep1 step 3400/17880 loss 0.2745 elapsed 37.7m eta 160.4m
+=== epoch 1 done: val accuracy 63.35% (40.6m) ===
+    -> new best, saved (val 63.35%)
+ep2 step 3600/17880 loss 0.1890 elapsed 40.9m eta 162.3m
+ep2 step 3800/17880 loss 0.2608 elapsed 43.1m eta 159.7m
+ep2 step 4000/17880 loss 0.4672 elapsed 45.3m eta 157.2m
+ep2 step 4200/17880 loss 0.1806 elapsed 47.5m eta 154.8m
+ep2 step 4400/17880 loss 0.0769 elapsed 49.8m eta 152.5m
+ep2 step 4600/17880 loss 0.2813 elapsed 52.0m eta 150.1m
+ep2 step 4800/17880 loss 0.1785 elapsed 54.2m eta 147.8m
+ep2 step 5000/17880 loss 0.2780 elapsed 56.5m eta 145.4m
+ep2 step 5200/17880 loss 0.1522 elapsed 58.7m eta 143.1m
+ep2 step 5400/17880 loss 0.1776 elapsed 60.9m eta 140.7m
+ep2 step 5600/17880 loss 0.1214 elapsed 63.1m eta 138.4m
+ep2 step 5800/17880 loss 0.2741 elapsed 65.3m eta 136.0m
+ep2 step 6000/17880 loss 0.2795 elapsed 67.5m eta 133.7m
+ep2 step 6200/17880 loss 0.1896 elapsed 69.8m eta 131.4m
+ep2 step 6400/17880 loss 0.5364 elapsed 72.0m eta 129.2m
+ep2 step 6600/17880 loss 0.1422 elapsed 74.3m eta 127.0m
+ep2 step 6800/17880 loss 0.1190 elapsed 76.6m eta 124.8m
+ep2 step 7000/17880 loss 0.4114 elapsed 78.9m eta 122.7m
+=== epoch 2 done: val accuracy 62.11% (81.8m) ===
+ep3 step 7200/17880 loss 0.1854 elapsed 82.3m eta 122.1m
+ep3 step 7400/17880 loss 0.1324 elapsed 84.6m eta 119.8m
+ep3 step 7600/17880 loss 0.2570 elapsed 86.9m eta 117.5m
+ep3 step 7800/17880 loss 0.5365 elapsed 89.2m eta 115.2m
+ep3 step 8000/17880 loss 0.1618 elapsed 91.4m eta 112.9m
+ep3 step 8200/17880 loss 0.0907 elapsed 93.7m eta 110.6m
+ep3 step 8400/17880 loss 0.1566 elapsed 96.0m eta 108.3m
+ep3 step 8600/17880 loss 0.1183 elapsed 98.3m eta 106.0m
+ep3 step 8800/17880 loss 0.2699 elapsed 100.5m eta 103.7m
+ep3 step 9000/17880 loss 0.1259 elapsed 102.8m eta 101.4m
+ep3 step 9200/17880 loss 0.4830 elapsed 105.1m eta 99.2m
+ep3 step 9400/17880 loss 0.1290 elapsed 107.4m eta 96.9m
+ep3 step 9600/17880 loss 0.1406 elapsed 109.7m eta 94.6m
+ep3 step 9800/17880 loss 0.3355 elapsed 112.0m eta 92.3m
+ep3 step 10000/17880 loss 0.2489 elapsed 114.3m eta 90.1m
+ep3 step 10200/17880 loss 0.2216 elapsed 116.6m eta 87.8m
+ep3 step 10400/17880 loss 0.1879 elapsed 119.0m eta 85.6m
+ep3 step 10600/17880 loss 0.3460 elapsed 121.3m eta 83.3m
+=== epoch 3 done: val accuracy 63.49% (123.9m) ===
+    -> new best, saved (val 63.49%)
+ep4 step 10800/17880 loss 0.1092 elapsed 124.8m eta 81.8m
+ep4 step 11000/17880 loss 0.1098 elapsed 127.2m eta 79.5m
+ep4 step 11200/17880 loss 0.0883 elapsed 129.4m eta 77.2m
+ep4 step 11400/17880 loss 0.2402 elapsed 131.6m eta 74.8m
+ep4 step 11600/17880 loss 0.1175 elapsed 133.8m eta 72.4m
+ep4 step 11800/17880 loss 0.2843 elapsed 136.0m eta 70.1m
+ep4 step 12000/17880 loss 0.3271 elapsed 138.2m eta 67.7m
+ep4 step 12200/17880 loss 0.2219 elapsed 140.4m eta 65.4m
+ep4 step 12400/17880 loss 0.0728 elapsed 142.6m eta 63.0m
+ep4 step 12600/17880 loss 0.1581 elapsed 144.8m eta 60.7m
+ep4 step 12800/17880 loss 0.0666 elapsed 147.0m eta 58.3m
+ep4 step 13000/17880 loss 0.3144 elapsed 149.2m eta 56.0m
+ep4 step 13200/17880 loss 0.1268 elapsed 151.4m eta 53.7m
+ep4 step 13400/17880 loss 0.2207 elapsed 153.6m eta 51.3m
+ep4 step 13600/17880 loss 0.1966 elapsed 155.7m eta 49.0m
+ep4 step 13800/17880 loss 0.0924 elapsed 157.9m eta 46.7m
+ep4 step 14000/17880 loss 0.0667 elapsed 160.1m eta 44.4m
+ep4 step 14200/17880 loss 0.1334 elapsed 162.3m eta 42.1m
+=== epoch 4 done: val accuracy 64.13% (164.5m) ===
+    -> new best, saved (val 64.13%)
+ep5 step 14400/17880 loss 0.0712 elapsed 165.5m eta 40.0m
+ep5 step 14600/17880 loss 0.2316 elapsed 167.7m eta 37.7m
+ep5 step 14800/17880 loss 0.0567 elapsed 169.9m eta 35.4m
+ep5 step 15000/17880 loss 0.0266 elapsed 172.1m eta 33.0m
+ep5 step 15200/17880 loss 0.2199 elapsed 174.3m eta 30.7m
+ep5 step 15400/17880 loss 0.1158 elapsed 176.5m eta 28.4m
+ep5 step 15600/17880 loss 0.0758 elapsed 178.7m eta 26.1m
+ep5 step 15800/17880 loss 0.0544 elapsed 180.9m eta 23.8m
+ep5 step 16000/17880 loss 0.1080 elapsed 183.0m eta 21.5m
+ep5 step 16200/17880 loss 0.0925 elapsed 185.2m eta 19.2m
+ep5 step 16400/17880 loss 0.1393 elapsed 187.4m eta 16.9m
+ep5 step 16600/17880 loss 0.0680 elapsed 189.6m eta 14.6m
+ep5 step 16800/17880 loss 0.1048 elapsed 191.8m eta 12.3m
+ep5 step 17000/17880 loss 0.0841 elapsed 194.0m eta 10.0m
+ep5 step 17200/17880 loss 0.0896 elapsed 196.2m eta 7.8m
+ep5 step 17400/17880 loss 0.0985 elapsed 198.4m eta 5.5m
+ep5 step 17600/17880 loss 0.0738 elapsed 200.6m eta 3.2m
+ep5 step 17800/17880 loss 0.0862 elapsed 202.7m eta 0.9m
+=== epoch 5 done: val accuracy 64.49% (204.7m) ===
+    -> new best, saved (val 64.49%)
+restored best (val 64.49%)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.79it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.70it/s]
+saved: /Users/thxdadloveyoumost/jjfolder/mymodel/models/final1
+total: 204.7 min
